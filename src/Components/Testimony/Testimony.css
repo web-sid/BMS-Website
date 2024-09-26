@@ -1,0 +1,238 @@
+.testimonials-carousel-section {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.testimonials-carousel-section h2 {
+  color: #ff9900;
+  margin-bottom: 30px;
+  font-size: 50px;
+  padding: 30px;
+  background: url("https://png.pngtree.com/background/20210711/original/pngtree-linear-sticker-school-life-sticker-green-chalkboard-background-picture-image_1155239.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.testimonials-carousel-section p {
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.testimonials-carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 500px;
+  max-height: 500px;
+  text-align: center;
+  margin: 0 10px;
+  position: relative;
+  flex: 0 0 33.3333%;
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-top: -20px;
+  border: 5px solid orange;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 10px 20px;
+}
+
+.testimonial-text::before {
+  top: -20px;
+  left: 10px;
+}
+
+.testimonial-text::after {
+  content: "”";
+  bottom: -40px;
+  right: 80px;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  margin-top: 5px;
+  color: orange;
+}
+
+.testimonial-author span {
+  font-weight: normal;
+  color: #666;
+}
+
+.carousel-control {
+  background-color: #ff9900;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0 5px;
+  margin: 0 5px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.carousel-control:hover {
+  background-color: #e68a00;
+}
+
+.carousel-control.prev {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.carousel-control.next {
+  position: absolute;
+  right: 0;
+}
+
+.testimonials-carousel-section .btn {
+  padding: 10px 25px;
+  background-color: orange;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.testimonials-carousel-section .btn:hover {
+  animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .testimonials-carousel-section h2 {
+    font-size: 40px;
+    padding: 20px;
+  }
+
+  .testimonial-card {
+    min-width: 400px;
+    flex: 0 0 50%;
+  }
+
+  .testimonial-text {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .testimonials-carousel-section h2 {
+    font-size: 35px;
+    padding: 15px;
+  }
+
+  .testimonial-card {
+    min-width: 300px;
+    flex: 0 0 100%;
+  }
+
+  .testimonial-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .testimonial-text {
+    margin-top: 50px;
+  }
+  .testimonials-carousel {
+    overflow: scroll;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-carousel-section h2 {
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  .testimonial-card {
+    min-width: 250px;
+  }
+
+  .testimonial-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .testimonial-text {
+    margin-top: 40px;
+  }
+
+  .carousel-control {
+    display: none;
+  }
+  .testimonials-carousel {
+    overflow: scroll;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonials-carousel-section h2 {
+    font-size: 25px;
+    padding: 5px;
+  }
+
+  .testimonial-card {
+    min-width: 200px;
+  }
+
+  .testimonial-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .testimonial-text {
+    margin-top: 30px;
+  }
+  .testimonials-carousel {
+    overflow: scroll;
+    width: 100%;
+  }
+  .testimonials-carousel-section .btn {
+    font-size: 15px;
+  }
+}

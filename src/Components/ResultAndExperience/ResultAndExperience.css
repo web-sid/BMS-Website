@@ -1,0 +1,175 @@
+.result-container {
+  margin-top: 30px;
+  padding-top: 10px;
+  text-align: right;
+  background: url("https://png.pngtree.com/thumb_back/fw800/background/20231019/pngtree-close-up-of-healthy-nutrition-concept-on-white-textured-background-image_13642299.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.result-container h1 {
+  padding: 15px 15px;
+  font-size: 50px;
+  color: #0a4329;
+}
+.result-container p {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+
+.info-containers {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 30px;
+}
+
+.customer,
+.experience {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  animation: fadeInUp 1s ease-in-out both;
+}
+
+.customer h4 span .experience h4 span {
+  border: 2px solid black;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.customer,
+.experience {
+  margin: 10px 0;
+  padding: 15px;
+}
+
+.customer img,
+.experience img {
+  width: 150px;
+}
+
+.experience img:hover {
+  width: 160px;
+  transition: all 0.2s;
+}
+
+.customer img:hover {
+  width: 160px;
+  transition: all 0.2s;
+}
+
+.img {
+  background-color: black;
+}
+
+.info-containers span {
+  color: #005b41;
+  font-weight: 900;
+  font-size: 25px;
+  text-align: center;
+  animation: spanAnimate 1s infinite;
+}
+
+h4 {
+  text-align: center;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+  .result-container h1 {
+    font-size: 40px;
+  }
+
+  .result-container p {
+    font-size: 18px;
+  }
+
+  .info-containers {
+    gap: 20px;
+  }
+
+  .customer img,
+  .experience img {
+    width: 130px;
+  }
+}
+
+@media (max-width: 992px) {
+  .result-container {
+    text-align: center;
+  }
+
+  .result-container h1 {
+    font-size: 35px;
+  }
+
+  .result-container p {
+    font-size: 16px;
+  }
+
+  .info-containers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .customer img,
+  .experience img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .result-container {
+    background-image: none;
+  }
+
+  .result-container h1 {
+    font-size: 30px;
+  }
+
+  .result-container p {
+    font-size: 14px;
+  }
+
+  .customer img,
+  .experience img {
+    width: 100px;
+  }
+
+  .info-containers span {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .result-container h1 {
+    font-size: 25px;
+  }
+
+  .result-container p {
+    font-size: 12px;
+  }
+
+  .customer img,
+  .experience img {
+    width: 80px;
+  }
+
+  .info-containers span {
+    font-size: 18px;
+  }
+}

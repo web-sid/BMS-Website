@@ -1,0 +1,123 @@
+.recipe-detail-container {
+  font-family: Arial, sans-serif;
+}
+
+.recipe-header {
+  background-size: inherit;
+  background-position: center;
+  background-repeat: repeat-x;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: left;
+}
+
+.recipes-title {
+  font-size: 2.5em;
+  color: rgb(169, 165, 165);
+  margin: 0;
+}
+
+.recipe-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.recipe-main {
+  flex: 3;
+  padding-right: 20px;
+  margin-bottom: 40px;
+}
+
+.recipe-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.recipe-images img {
+  width: calc(33.333% - 10px);
+  border-radius: 10px;
+}
+
+.recipes-instructions {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: white;
+  color: black;
+}
+
+.recipes-instructions h3 {
+  padding: 5px;
+  font-size: 30px;
+}
+
+.recipes-instructions ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  text-align: left;
+}
+
+.recipe-sidebar {
+  padding-left: 20px;
+  border-left: 1px solid #ddd;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.recipe-ingredients {
+  margin-bottom: 20px;
+  padding: 20px 0;
+}
+
+.recipe-ingredients h3 {
+  margin-bottom: 10px;
+}
+
+.recipe-ingredients ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: circle;
+}
+
+.recipe-ingredients li {
+  margin-bottom: 5px;
+  font-size: 13px;
+  margin-left: 10px;
+  padding: 0 10px;
+}
+
+/* Media Queries for Responsive Design */
+
+@media screen and (min-width: 768px) {
+  .recipe-content {
+    flex-direction: row;
+  }
+
+  .recipe-images img {
+    width: calc(25% - 10px);
+  }
+
+  .recipe-sidebar {
+    width: 30%;
+    max-width: 400px;
+    max-height: 700px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .recipe-images img {
+    width: calc(50% - 10px);
+  }
+}

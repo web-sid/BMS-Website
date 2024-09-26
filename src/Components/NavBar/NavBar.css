@@ -1,0 +1,160 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(27, 4, 34);
+  opacity: 0.8;
+  padding: 10px 20px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+}
+
+.logo-title {
+  color: white;
+}
+
+.nav h4 {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  color: #0a6847;
+  cursor: pointer;
+  padding: 14.5px;
+  border-top-right-radius: 40px;
+}
+
+.nav span {
+  font-size: 14px;
+  color: white;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+}
+
+ul a {
+  padding: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+ul li {
+  margin: 0;
+}
+
+ul button {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  background-color: #93b1a6;
+  color: black;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+ul button:hover {
+  background-color: #7aba78;
+}
+
+/* Hamburger menu */
+.hamburger-menu {
+  display: none; /* Hide by default for larger screens */
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.bar.active:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.bar.active:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.active:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .nav {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  ul button {
+    padding: 10px 20px;
+    margin-right: 0;
+  }
+
+  .hamburger-menu {
+    display: block; /* Show hamburger menu icon */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .nav-links {
+    display: none; /* Hide navigation links initially */
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex; /* Show navigation links when active */
+    flex-direction: column;
+  }
+
+  .nav > img {
+    width: 40px;
+    cursor: pointer;
+  }
+
+  .nav h4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 15px;
+    color: #0a6847;
+    cursor: pointer;
+    border-top-right-radius: 40px;
+  }
+
+  .nav span {
+    font-size: 12px;
+    margin-left: 5px;
+    color: white;
+  }
+}
